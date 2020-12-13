@@ -112,6 +112,7 @@ export default {
             });
             this.markers = markers;
             for (let index = 0; index < array.length; index++) {
+                
                 const element = array[index];
                 for (let i = i+1; i < array.length; i++) {
                     if(array[index][0]==array[i][0]){
