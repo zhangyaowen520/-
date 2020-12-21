@@ -5,6 +5,7 @@ import map from "../views/高德地图/wenmap.vue";
 import wenmap from "../views/高德地图/myWenMap.vue";
 import vueAmap from "../views/高德地图/vue-amap.vue";
 import Lists from "../views/建易宝封装/Lists.vue";
+import echarts from "../views/echarts/echarts.vue"
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,22 +14,30 @@ const routes = [
         name: "Home",
         component: Home,
     },
+    //echarts
+    {
+        path: "/echarts",
+        name: "echarts",
+        component: echarts,
+    },
     {
         path: "/map",
         name: "map",
         component: map,
     },
+    //建易宝的封装
     {
         path: "/Lists",
         name: "Lists",
         component: Lists,
     },
-
+    //地图的封装
     {
         path: "/wenmap",
         name: "wenmap",
         component: wenmap,
     },
+
     {
         path: "/vueAmap",
         name: "vueAmap",
