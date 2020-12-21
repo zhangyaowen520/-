@@ -6,6 +6,8 @@ import wenmap from "../views/高德地图/myWenMap.vue";
 import vueAmap from "../views/高德地图/vue-amap.vue";
 import Lists from "../views/建易宝封装/Lists.vue";
 import echarts from "../views/echarts/echarts.vue"
+import stairs from "../views/楼梯/stairs.vue"
+import stairss from "../views/楼梯/stairss.vue"
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,6 +15,17 @@ const routes = [
         path: "/",
         name: "Home",
         component: Home,
+    },
+    // stairs楼梯
+    {
+        path: "/stairs",
+        name: "stairs",
+        component: stairs,
+    },
+    {
+        path: "/stairss",
+        name: "stairss",
+        component: stairss,
     },
     //echarts
     {
